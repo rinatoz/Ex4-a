@@ -20,9 +20,10 @@ public:
         double distance(uint x_s, uint y_s, uint x_t, uint y_t){
                 return sqrt(pow(x_s - x_t,2) + pow(y_s - y_t,2));}
         virtual void attack (std::vector<std::vector<Soldier*>> &b, pair<int,int> location) = 0;
-        uint get_player_number() { return player_number;}
-        uint get_health() { return health;}
+		  uint get_health() { return health;}
         uint get_max_health() { return max_health;}
         void set_health(uint h) { health = min(h,max_health);}
         uint get_damage() { return damage;}
+        uint get_player_number() { return player_number;}
+      
 };
