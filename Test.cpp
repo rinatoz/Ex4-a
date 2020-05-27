@@ -127,7 +127,7 @@ Board d(30,30);
    CHECK(!d.has_soldiers(2));
    for (int i = 0; i < 30; i++) {
      
-     b[{15,i}] = new FootSoldier(2);
+     d[{15,i}] = new FootSoldier(2);
    //   CHECK_NOTHROW( d[{0,i}] = new FootSoldier(1));
    CHECK(true);
    }
@@ -207,5 +207,6 @@ Board e(30,30);
    
 
 
+}
 }
 
