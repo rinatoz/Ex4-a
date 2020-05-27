@@ -7,7 +7,7 @@
 using namespace std;
 class Soldier {
         
-private:
+public:
         uint max_health;
         uint health;
         uint damage;
